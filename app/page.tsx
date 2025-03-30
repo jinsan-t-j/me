@@ -13,7 +13,7 @@ export default function Page() {
         {`I’m also passionate about helping freshers break into the tech world, so if you’re just starting out, let’s connect! `}
         </p>
         <p className="mb-4">
-          {`Excited to share my journey, thoughts, and projects with you! Check out my blogs and portfolio to see what I’ve been up to`}
+          {`Excited to share my journey, thoughts, and projects with you soon!`}
           </p>
       <div className="my-8">
         <BlogPosts />
