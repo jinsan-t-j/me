@@ -1,21 +1,36 @@
 import { BlogPosts } from 'app/components/posts'
+import { Experience } from 'app/components/experience'
+import { Education } from 'app/components/education'
+import { Skills } from 'app/components/skills'
+import { DATA } from 'app/data/resume'
 
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        I'm Jinsan
+      <h1 className="mb-8 text-2xl font-semibold">
+        Hey, &nbsp;I'm {DATA.name} 👋
       </h1>
       <p className="mb-4">
-        {` SWE based in India. I’ve got a mix of experience in backend development, cloud computing, and DevOps, and I’m totally obsessed with performance and how computers tick. I love chatting about tech solutions and am always up for brainstorming ideas! `}
-        </p>
-        <p className="mb-4">
-        {`I’m also passionate about helping freshers break into the tech world, so if you’re just starting out, let’s connect! `}
-        </p>
-        <p className="mb-4">
-          {`Excited to share my journey, thoughts, and projects with you soon!`}
-          </p>
+        <span dangerouslySetInnerHTML={{ __html: DATA.description }} />
+      </p>
+
       <div className="my-8">
+        <h2 className="mb-4 text-xl font-semibold tracking-tighter">Skills</h2>
+        <Skills />
+      </div>
+
+      <div className="my-8">
+        <h2 className="mb-4 text-xl font-semibold tracking-tighter">Experience</h2>
+        <Experience />
+      </div>
+
+      <div className="my-8">
+        <h2 className="mb-4 text-xl font-semibold tracking-tighter">Education</h2>
+        <Education />
+      </div>
+
+      <div className="my-8">
+        <h2 className="mb-4 text-xl font-semibold tracking-tighter">Blog</h2>
         <BlogPosts />
       </div>
     </section>

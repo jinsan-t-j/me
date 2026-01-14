@@ -8,18 +8,20 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 
+import { DATA } from 'app/data/resume'
+
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Jinsan TJ | SE | India',
-    template: '%s | Next.js Portfolio Starter',
+    default: DATA.name,
+    template: `%s | ${DATA.name}`,
   },
-  description: 'Jinsan is a software engineer based in India. Diverse experience in web development, cloud computing, and DevOps. Obsessed with performance and how computer works.',
+  description: DATA.summary,
   openGraph: {
-    title: 'Jinsan TJ',
-    description: 'Jinsan is a software engineer based in India. Diverse experience in web development, cloud computing, and DevOps. Obsessed with performance and user experience..',
+    title: DATA.name,
+    description: DATA.summary,
     url: baseUrl,
-    siteName: 'Jinsan TJ',
+    siteName: DATA.name,
     locale: 'en_US',
     type: 'website',
   },
