@@ -35,10 +35,10 @@ export default function Page() {
           <Education />
         </div>
 
-        <div id="blog" className="my-8 scroll-mt-20">
+        {/* <div id="blog" className="my-8 scroll-mt-20">
           <h2 className="mb-4 text-xl font-semibold tracking-tighter">Blog</h2>
           <BlogPosts />
-        </div>
+        </div> */}
 
       </div>
     </section>
