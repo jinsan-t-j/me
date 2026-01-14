@@ -87,8 +87,13 @@ export const DATA = {
             logoUrl: "/bmc.png",
             start: "November 2024",
             end: "Present",
-            description:
-                "Refactored backend code and optimized SQL queries to reduce response latency, lower memory usage, and improve system performance under load. Contributed to the Buy Me A Coffee web and mobile applications by delivering new backend features and integrating third-party services. Redeveloped and optimized Firebase Cloud Functions for casavation.com, an AI-powered interior and exterior design platform. Designed, developed, and deployed translateThis.app, an AI-powered translation platform. Contributed to chataway.app, a multi-model conversational platform.",
+            description: [
+                "Refactored backend code and optimized SQL queries to reduce response latency, lower memory usage, and improve system performance under load.",
+                "Contributed to the Buy Me A Coffee web and mobile applications by delivering new backend features and integrating third-party services.",
+                "Redeveloped and optimized Firebase Cloud Functions for casavation.com, an AI-powered interior and exterior design platform.",
+                "Designed, developed, and deployed translateThis.app, an AI-powered translation platform.",
+                "Contributed to chataway.app, a multi-model conversational platform."
+            ],
         },
         {
             company: "Fingent Global Solutions",
@@ -99,8 +104,12 @@ export const DATA = {
             logoUrl: "/fingent.png",
             start: "August 2022",
             end: "November 2024",
-            description:
-                "Revamped \"InfinCE Workspace\" using Node.js, NestJs, Laravel and ReactJs. Developed and managed 50+ API services for the InfinCE Mobile Application. Utilized tools such as Docker, Dev Containers, Authentik SSO, Open LDAP, SonarQube, and Gitlab. Implemented calendar mail notification system by modifying open source ICS package.",
+            description: [
+                "Revamped \"InfinCE Workspace\" using Node.js, NestJs, Laravel and ReactJs.",
+                "Developed and managed 50+ API services for the InfinCE Mobile Application.",
+                "Utilized tools such as Docker, Dev Containers, Authentik SSO, Open LDAP, SonarQube, and Gitlab.",
+                "Implemented calendar mail notification system by modifying open source ICS package."
+            ],
         },
         {
             company: "IPIX Technologies",
@@ -111,8 +120,11 @@ export const DATA = {
             logoUrl: "/ipix.png",
             start: "February 2021",
             end: "July 2022",
-            description:
-                "Engineered multiple intricate and stable applications using Node.js, React, Laravel, Blade and Wordpress. Delivered digital solutions that meet client requirements. Maintained and developed features for a learning management system.",
+            description: [
+                "Engineered multiple intricate and stable applications using Node.js, React, Laravel, Blade and Wordpress.",
+                "Delivered digital solutions that meet client requirements.",
+                "Maintained and developed features for a learning management system."
+            ],
         },
         {
             company: "Binalyto Data Services",
@@ -123,8 +135,10 @@ export const DATA = {
             logoUrl: "/binalyto.png",
             start: "July 2020",
             end: "January 2021",
-            description:
-                "Developed robust applications independently, specializing in content management systems and booking systems. Built internal web applications using Node.js, EJS, Laravel and WordPress and other static websites.",
+            description: [
+                "Developed robust applications independently, specializing in content management systems and booking systems.",
+                "Built internal web applications using Node.js, EJS, Laravel and WordPress and other static websites."
+            ],
         },
     ],
     education: [

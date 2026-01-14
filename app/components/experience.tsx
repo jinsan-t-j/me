@@ -19,9 +19,13 @@ export function Experience() {
                     <p className="text-neutral-600 dark:text-neutral-400 text-sm">
                         {job.title}
                     </p>
-                    <p className="text-sm text-neutral-800 dark:text-neutral-200">
-                        {job.description}
-                    </p>
+                    <ul className="list-disc list-inside text-sm text-neutral-800 dark:text-neutral-200 mt-2">
+                        {job.description.map((desc, i) => (
+                            <li key={i} className="mb-1">
+                                {desc}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             ))}
         </div>
