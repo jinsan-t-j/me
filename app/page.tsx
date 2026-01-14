@@ -13,7 +13,7 @@ export default function Page() {
 
         <div id="about" className="scroll-mt-20">
           <h1 className="mb-8 text-2xl font-semibold">
-            Hey, &nbsp;I'm {DATA.name} 👋
+            Hey, I'm {DATA.name} 👋
           </h1>
           <p className="mb-4">
             <span dangerouslySetInnerHTML={{ __html: DATA.description }} />
