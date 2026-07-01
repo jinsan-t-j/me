@@ -1,6 +1,6 @@
 "use client"
 
-import { DATA } from 'app/data/resume'
+import { DATA } from 'app/data/portfolio'
 
 function ArrowIcon() {
   return (
@@ -57,30 +57,6 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <div className="flex justify-center my-8">
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="p-3 rounded-full bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors shadow-sm cursor-pointer"
-          aria-label="Back to top"
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M12 19V5" />
-            <path d="M5 12l7-7 7 7" />
-          </svg>
-        </button>
-      </div>
-      <p className="mt-8 text-neutral-100 text-xs text-center">
-        © {new Date().getFullYear()} MIT Licensed
-      </p>
     </footer>
   )
 }
