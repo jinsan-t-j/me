@@ -3,13 +3,13 @@ import { ThemeToggle } from './theme-toggle'
 
 const navItems = {
   '/': {
-    name: 'home',
+    name: 'Home',
   },
   '/projects': {
-    name: 'projects',
+    name: 'Projects',
   },
   '/pasts': {
-    name: 'pasts',
+    name: 'Pasts',
   },
 }
 

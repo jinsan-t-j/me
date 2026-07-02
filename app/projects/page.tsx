@@ -11,12 +11,18 @@ export default function Page() {
   return (
     <section className="animate-fade-in space-y-8">
       <div className="space-y-12">
-        {DATA.projects.map((project, id) => (
-          <div key={id} className="group space-y-2">
+        {DATA.projects.map((project) => (
+          <div key={project.title} className="space-y-2">
             <div className="flex justify-between items-baseline">
               <h2 className="font-semibold text-base text-neutral-800 dark:text-neutral-200">
-                {project.title}
+                <Link target='_blank' href={project.href} className="group flex items-center gap-1 hover:underline">
+                  {project.title}
+                  <svg className="h-3 w-3 opacity-0 group-hover:opacity-60 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </Link>
               </h2>
+                
             </div>
             <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
               {project.description}

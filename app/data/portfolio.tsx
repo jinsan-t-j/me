@@ -103,7 +103,27 @@ export const DATA = {
                     href: "https://vuejs.org",
                 }
             ],
-        }
+        },
+        {
+            title: "Socket.IO Studio",
+            href: "https://socketiostudio.jinsantj.com",
+            active: true,
+            description: "A high-performance, developer-first Socket.IO testing client designed for protocol-level control and observability. Features wildcard listeners, real-time metrics, connection health dashboards, and a custom scripting engine.",
+            technologies: [
+                "Vue 3",
+                "TypeScript",
+                "Vite",
+                "Tailwind CSS",
+                "Socket.io",
+                "IndexedDB"
+            ],
+            links: [
+                {
+                    type: "Source Code",
+                    href: "https://github.com/jinsan-t-j/Socket.IO-Studio",
+                }
+            ],
+        },
     ]
 };
 
