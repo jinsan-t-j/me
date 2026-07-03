@@ -9,7 +9,7 @@ export default function Page() {
             Hi, I&apos;m Jinsan T J
           </h1>
           <p className="text-sm font-medium text-neutral-500 dark:text-neutral-400">
-            Founder & Software Engineer
+            Software Engineer
           </p>
         </div>
 
