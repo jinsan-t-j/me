@@ -28,7 +28,7 @@ export const DATA = {
             start: "November 2024",
             end: "January 2026",
             description: [
-                "Worked on multiple AI-powered SaaS products, developing scalable backend services using Flask and the Firebase ecosystem. Focused on performance optimization, AI model integration[...]
+                "Worked on multiple AI-powered SaaS products, developing scalable backend services using Flask and the Firebase ecosystem. Focused on performance optimization, AI model integrations (OpenAI, Gemini, Anthropic, xAI), serverless architecture, and cloud infrastructure. Built and maintained production applications including TranslateThis, Casavation, Chataway, and contributed to VoiceNotes and its open-source ecosystem.",
                 "Key technologies: Python, Flask, Firebase, Cloud Functions, Cloud SQL, OpenAI, Gemini, Anthropic, xAI, Nuxt.js."
             ],
         },
@@ -42,7 +42,7 @@ export const DATA = {
             start: "August 2022",
             end: "November 2024",
             description: [
-                "Contributed to the modernization of the InfinCE enterprise workspace platform by migrating legacy systems to a scalable architecture. Developed and maintained 50+ APIs for mobile [...]
+                "Contributed to the modernization of the InfinCE enterprise workspace platform by migrating legacy systems to a scalable architecture. Developed and maintained 50+ APIs for mobile applications, implemented enterprise integrations, automated development workflows, and mentored team members through code reviews and best practices.",
                 "Key technologies: Node.js, NestJS, Laravel, React, Docker, GitLab CI/CD, Authentik SSO, OpenLDAP."
             ],
         },
@@ -56,7 +56,7 @@ export const DATA = {
             start: "February 2021",
             end: "July 2022",
             description: [
-                "Developed and maintained client-focused web applications and learning management systems. Built full-stack solutions, implemented new features, and delivered customized software t[...]
+                "Developed and maintained client-focused web applications and learning management systems. Built full-stack solutions, implemented new features, and delivered customized software tailored to business requirements.",
                 "Key technologies: Node.js, React, Laravel, Blade, WordPress."
             ],
         },
@@ -70,7 +70,7 @@ export const DATA = {
             start: "July 2020",
             end: "January 2021",
             description: [
-                "Independently developed web applications, content management systems, and booking platforms, particularly for churches during the post-pandemic period. Delivered complete end-to-e[...]
+                "Independently developed web applications, content management systems, and booking platforms, particularly for churches during the post-pandemic period. Delivered complete end-to-end solutions while working across both frontend and backend technologies.",
                 "Key technologies: Node.js, Laravel, EJS, WordPress, HTML, CSS, JavaScript."
             ],
         },
@@ -80,7 +80,7 @@ export const DATA = {
             title: "QueueBuzz",
             href: "https://queuebuzz.com",
             active: true,   
-            description: "A modern, high-performance virtual queue management platform. Built to eliminate physical waiting lines by enabling hosts to create proximity-locked queues, and customers[...]
+            description: "A modern, high-performance virtual queue management platform. Built to eliminate physical waiting lines by enabling hosts to create proximity-locked queues, and customers to join them with real-time SSE updates, Firebase notifications, and automatic presence verification.",
             technologies: [
                 "Go",
                 "Fiber v3",
@@ -108,7 +108,7 @@ export const DATA = {
             title: "Socket.IO Studio",
             href: "https://socketiostudio.jinsantj.com",
             active: true,
-            description: "A high-performance, developer-first Socket.IO testing client designed for protocol-level control and observability. Features wildcard listeners, real-time metrics, conne[...]
+            description: "A high-performance, developer-first Socket.IO testing client designed for protocol-level control and observability. Features wildcard listeners, real-time metrics, connection health dashboards, and a custom scripting engine.",
             technologies: [
                 "Vue 3",
                 "TypeScript",
@@ -135,7 +135,7 @@ export const DATA = {
                 "Tailwind CSS",
                 "Node.js",
                 "OpenAI",
-                "Anthropic,
+                "Anthropic",
                 "Gemini",
                 "XAI",
                 "Deepseek",
