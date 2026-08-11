@@ -128,13 +128,19 @@ export const DATA = {
             title: "Apply Aide",
             href: "https://applyaide.com/",
             active: true,
-            description: "AI-powered job application assistant that helps create tailored resumes, cover letters, and track applications to improve hiring outcomes.",
+            description: "AI-powered job application assistant that helps create tailored resumes, cover letters, Auto fills Job forms and other customizations to improve applying jobs.",
             technologies: [
                 "Next.js",
                 "TypeScript",
                 "Tailwind CSS",
                 "Node.js",
-                "OpenAI"
+                "OpenAI",
+                "Anthropic,
+                "Gemini",
+                "XAI",
+                "Deepseek",
+                "Openrouter",
+                "Custom Models"
             ],
             links: [
                 {
