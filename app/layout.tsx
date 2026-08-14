@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description: DATA.summary,
+  alternates: {
+    canonical: baseUrl,
+  },
   openGraph: {
     title: DATA.name,
     description: DATA.summary,
@@ -25,6 +28,11 @@ export const metadata: Metadata = {
     siteName: DATA.name,
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: DATA.name,
+    description: DATA.summary,
   },
   robots: {
     index: true,

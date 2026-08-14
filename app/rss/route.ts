@@ -1,5 +1,6 @@
 import { baseUrl } from 'app/sitemap'
 import { getBlogPosts } from 'app/blog/utils'
+import { DATA } from 'app/data/portfolio'
 
 export const dynamic = 'force-static'
 
@@ -30,9 +31,10 @@ export async function GET() {
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
-        <title>My Portfolio</title>
+        <title>${DATA.name}</title>
         <link>${baseUrl}</link>
-        <description>This is my portfolio RSS feed</description>
+        <description>${DATA.summary}</description>
+        <language>en</language>
         ${itemsXml}
     </channel>
   </rss>`

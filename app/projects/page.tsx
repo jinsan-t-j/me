@@ -1,15 +1,43 @@
 import type { Metadata } from 'next'
 import { DATA } from 'app/data/portfolio'
+import { JsonLd } from 'app/components/json-ld'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Ventures and open source projects.',
+  description: `Open-source tools and ventures by ${DATA.name} — ${DATA.projects.map((p) => p.title).join(', ')}.`,
 }
 
 export default function Page() {
+  const collectionSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `Projects by ${DATA.name}`,
+    description: `Open-source tools and ventures by ${DATA.name}.`,
+    url: `${DATA.url}/projects`,
+    author: {
+      '@type': 'Person',
+      name: DATA.name,
+      url: DATA.url,
+    },
+    hasPart: DATA.projects.map((project) => ({
+      '@type': 'SoftwareApplication',
+      name: project.title,
+      description: project.description,
+      url: project.href,
+      applicationCategory: 'WebApplication',
+      operatingSystem: 'Web',
+      author: {
+        '@type': 'Person',
+        name: DATA.name,
+        url: DATA.url,
+      },
+    })),
+  }
+
   return (
     <section className="animate-fade-in space-y-8">
+      <JsonLd data={collectionSchema} />
       <div className="space-y-12">
         {DATA.projects.map((project) => (
           <div key={project.title} className="space-y-2">

@@ -1,15 +1,35 @@
 import type { Metadata } from 'next'
 import Link from "next/link";
 import { DATA } from "app/data/portfolio";
+import { JsonLd } from "app/components/json-ld";
 
 export const metadata: Metadata = {
   title: 'Experience',
-  description: 'Work history and professional experience.',
+  description: `Professional experience of ${DATA.name} — ${DATA.work.map((w) => `${w.title} at ${w.company}`).join(', ')}.`,
 }
 
 export default function Page() {
+  const profileSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    mainEntity: {
+      '@type': 'Person',
+      name: DATA.name,
+      url: DATA.url,
+      jobTitle: DATA.jobTitle,
+      sameAs: DATA.sameAs,
+      worksFor: DATA.work.map((job) => ({
+        '@type': 'Organization',
+        name: job.company,
+        url: job.href,
+      })),
+    },
+    dateModified: new Date().toISOString().split('T')[0],
+  }
+
   return (
     <section className="animate-fade-in space-y-8">
+      <JsonLd data={profileSchema} />
       <div className="space-y-8">
             {DATA.work.map((job, id) => (
                 <div key={id} className="group flex flex-col">
@@ -23,7 +43,7 @@ export default function Page() {
                             </Link>
                         </h3>
                         <span className="text-xs text-neutral-500 tabular-nums">
-                            {job.start} — {job.end}
+                            <time>{job.start}</time> — <time>{job.end}</time>
                         </span>
                     </div>
                     <p className="text-xs font-medium text-neutral-500 dark:text-neutral-400 mb-3">

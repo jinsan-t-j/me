@@ -1,7 +1,14 @@
 export const DATA = {
     name: "Jinsan T J",
-    summary: "Founder & Software Engineer. I build internet things.",
+    summary: "Senior Software Engineer. I build internet things.",
+    url: "https://jinsant.com",
+    jobTitle: "Senior Software Engineer",
+    location: "India",
     avatarUrl: "/me.png",
+    sameAs: [
+        "https://github.com/jinsan-t-j",
+        "https://linkedin.com/in/jinsan-tj",
+    ],
     contact: {
         email: "hello@jinsantj.com",
         social: {

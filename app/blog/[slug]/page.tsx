@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
+import { DATA } from 'app/data/portfolio'
 
 export const dynamicParams = false
 
@@ -77,7 +78,9 @@ export default function Blog({ params }) {
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
-              name: 'My Portfolio',
+              name: DATA.name,
+              url: DATA.url,
+              sameAs: DATA.sameAs,
             },
           }),
         }}
